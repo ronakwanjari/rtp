@@ -9,26 +9,26 @@
   <p>Open the browser console to see the output.</p>
 
   <script>
-    // Variable hoisting with var
-    console.log("Value of a before declaration:", a); // undefined
+    
+    console.log("Value of a before declaration:", a); 
     var a = 10;
-    console.log("Value of a after declaration:", a); // 10
+    console.log("Value of a after declaration:", a);
 
-    // Function hoisting
-    sayHello(); // Works fine
+  
+    sayHello(); 
     function sayHello() {
       console.log("Hello from sayHello function!");
     }
 
-    // Hoisting with let and const
+  
     try {
-      console.log("Value of b before declaration:", b); // Error
+      console.log("Value of b before declaration:", b); 
     } catch (error) {
       console.error("Error accessing b:", error.message);
     }
 
     let b = 20;
-    console.log("Value of b after declaration:", b); // 20
+    console.log("Value of b after declaration:", b); 
   </script>
 </body>
 </html>
