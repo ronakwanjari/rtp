@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Hoisting Demo</title>
+</head>
+<body>
+  <h1>JavaScript Hoisting Example</h1>
+  <p>Open the browser console to see the output.</p>
+
+  <script>
+    
+    console.log("Value of a before declaration:", a); 
+    var a = 10;
+    console.log("Value of a after declaration:", a);
+
+  
+    sayHello(); 
+    function sayHello() {
+      console.log("Hello from sayHello function!");
+    }
+
+  
+    try {
+      console.log("Value of b before declaration:", b); 
+    } catch (error) {
+      console.error("Error accessing b:", error.message);
+    }
+
+    let b = 20;
+    console.log("Value of b after declaration:", b); 
+  </script>
+</body>
+</html>
