@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Closure Example</title>
+</head>
+<body>
+
+<h2>result</h2>
+
+<script>
+  function outerFunction() {
+    let outerVariable = "I am from outer function";
+
+    function innerFunction() {
+      console.log(outerVariable); 
+    }
+
+    return innerFunction;
+  }
+
+  const myClosure = outerFunction(); 
+  myClosure(); 
+</script>
+
+</body>
+</html>
